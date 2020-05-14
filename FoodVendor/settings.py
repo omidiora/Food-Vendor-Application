@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'Vendor',
+    'customer',
     'django_filters',
     'allauth', # new
     'allauth.account', # new
     'allauth.socialaccount', # new
     'crispy_forms',
     'rest_framework',
+  
    
 ]
 

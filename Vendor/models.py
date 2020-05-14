@@ -40,8 +40,8 @@ class Menu(models.Model):
     def __str__(self):
         return self.name
 
-    # def  get_absolute_url(self):
-    #     return reverse('home', kwargs={'pk': self.pk})
+    def  get_absolute_url(self):
+        return reverse('home', kwargs={'pk': self.pk})
 
 
 class orderStatus(models.Model):

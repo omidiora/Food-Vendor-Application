@@ -5,9 +5,11 @@ from . import views
 
 urlpatterns = [
     path('' , index , name='home'),
-    path('reservation' , menu, name='home'),
-    path('menu/' ,  MenuView.as_view(), name='home'),
-    path('menuupdate/<pk>' ,   MenuUpdate.as_view(), name='home'),
+    path('food/<int:pk>' ,MenuDetail.as_view()  , name='home'),
+    
+    path('reservation' , menu, name='reservation'),
+    path('menu/' ,  MenuView.as_view(), name='menu'),
+    path('menuupdate/<pk>' ,   MenuUpdate.as_view(), name='menuupdate'),
    
 ]
     
