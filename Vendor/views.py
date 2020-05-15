@@ -21,11 +21,11 @@ class MenuDetail(DetailView):
       template_name='detail.html'
 
       def get(self, request, *args, **kwargs):
-        book = get_object_or_404(Menu, pk=kwargs['pk'])
-        context = {'food': book}
+        food = get_object_or_404(Menu, pk=kwargs['pk'])
+        context = {'food': food}
         return render(request, 'detail.html', context)
 
-
+# User.objects.create_superuser(username='name',email='email',password='password')
     
         
 

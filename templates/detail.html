@@ -84,9 +84,9 @@
       </div>
     </div>
     <div class="row">
-      {% for food in foods %}
-      <a href="food/{{food.id}}">  
-        <div class="col-md-6 col-lg-4 menu-wrap">
+     
+     
+        <div class="col-md-12 col-lg-4 menu-wrap">
             <div class="heading-menu text-center ftco-animate">
                 <!-- <h3>Breakfast</h3> -->
             </div>
@@ -97,19 +97,23 @@
               <div class="d-flex">
                 <div class="one-half">
                   <h3>{{food.name}}</h3>
+                  <p>{{food.description}}</p>
+                  <br>
+                  <button>Add to Cart</button>
                 </div>
+               
                 <div class="one-forth">
                   <span class="price">&#8358; {{food.price}}</span>
                 </div>
+          
               </div>
-            
               
           </div>
         </div>
-        </a>
+        
         </div>
     
-        {% endfor %}
+        
 
 
     </div>
