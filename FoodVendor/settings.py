@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount', # new
     'crispy_forms',
     'rest_framework',
+    'carts',
+
+    
    
 
   
@@ -170,4 +173,4 @@ LOGIN_REDIRECT_URL = '/'
 ACCOUNT_LOGOUT_REDIRECT_URL = '/'
 
 
-
+CART_PRODUCT_MODEL = 'Vendor.models.Menu'
