@@ -6,7 +6,7 @@ from Vendor.models import Menu
 
 User=settings.AUTH_USER_MODEL
 
-class CartManager(models.Model):
+
     
 
 

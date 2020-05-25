@@ -99,8 +99,12 @@
                   <h3>{{food.name}}</h3>
                   <p>{{food.description}}</p>
                   <br>
-                  <a class="btn btn-danger" href="{% url 'shopping-cart-add' %}"  >  Add to Cart</a>
+                  <form action="{% url 'carthome' %}"  method="POST"> 
+                    {% csrf_token %}
+                  <button type="submit" class="btn btn-danger">  Add to Cart</a>
+                </form>
                 </div>
+                
                
                 <div class="one-forth">
                   <span class="price">&#8358; {{food.price}}</span>
