@@ -25,7 +25,7 @@ SECRET_KEY = 'o-2^zne%ft=j-=y2(bn*-$!51k0d!#0fukz*g3q)pwd_7f@v#^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://foodvendorapp.herokuapp.com/','']
 
 
 # Application definition
